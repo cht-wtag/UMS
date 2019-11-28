@@ -1,0 +1,5 @@
+<%= form_with model: [:department, @student] do |f| %>
+   Name: <%= f.text_field :name %>
+  Roll: <%= f.text_field :roll %>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ums1</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+  </head>
+
+  <body>
+  <header>
+    <nav>
+
+      <ul>
+        <li> <%=link_to 'University', root_path %> </li>
+        <li><%=link_to 'Department',  departments_path %> </li>
+        <li><%=link_to 'Course Registration',  new_department_path %> </li>
+        <li><%=link_to 'Course',  courses_path%></li>
+
+      </ul>
+    </nav>
+  </header>
+    <%= yield %>
+  </body>
+</html>

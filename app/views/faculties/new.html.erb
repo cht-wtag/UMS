@@ -1,0 +1,13 @@
+<%#= simple_form_for @faculty do |f| %>
+  <%#= f.input :name %>
+  <%#= f.input :position %>
+  <%#= f.association :department %>
+  <%#= f.button :submit %>
+<%# end %>
+
+
+<%= form_with model: [:department, @faculty]  do |f| %>
+  Faculty Name: <%= f.text_field :name %>
+  Position: <%= f.text_field :position %>
+  <%= f.submit %>
+<% end %>

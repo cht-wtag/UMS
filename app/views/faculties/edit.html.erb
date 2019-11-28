@@ -1,0 +1,5 @@
+<%= form_with model: [:department, @faculty] do |f| %>
+   Name: <%= f.text_field :name %>
+  Name: <%= f.text_field :position %>
+  <%= f.submit %>
+<% end %>
