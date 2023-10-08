@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+## UMS
 
 * Ruby version
+```bash
+ ruby '2.6.5'
+```
 
-* System dependencies
+* Rails version
+```bash
+ gem 'rails', '~> 6.0.1'
+```
 
-* Configuration
+* Database
+```bash
+ latest postgres
+```
 
-* Database creation
+** To run the project
 
-* Database initialization
+- Clone the repository
 
-* How to run the test suite
+  ```bash
+    https://github.com/cht-wtag/UMS.git
+  ```
 
-* Services (job queues, cache servers, search engines, etc.)
+- Run command
 
-* Deployment instructions
-
-* ...
+  ```bash
+    gem install bundler
+    bundle install
+    rails db:create
+    rails db:migrate
+    rails db:seed
+    rails s
+  ```
